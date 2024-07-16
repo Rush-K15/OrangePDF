@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrangePDF</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="OrangePDF - Transform and Manage PDFs">
+<meta property="og:description" content="Transform, edit, and manage PDFs easily with OrangePDF's fast and secure tools. Explore our free and premium plans today!">
+<meta property="og:image" content="../assets/logo.png">
+<meta property="og:url" content="https://organgepdf.web.app/">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="OrangePDF - Transform and Manage PDFs">
+<meta name="twitter:description" content="Transform, edit, and manage PDFs easily with OrangePDF's fast and secure tools. Explore our free and premium plans today!">
+<meta name="twitter:image" content="https://example.com/path/to/your/image.jpg">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left">
+            <img id="logo_img" src="../assets/logo.png" alt="logo" />
+            <h1 id="logo_txt">Orange</h1>
+            <h1 id="pdf">PDF</h1>
+        </div>
+        <div class="right">
+            <ul class="nav_list">
+                <a id="list_content" href="#">Home</a>
+                <a id="list_content" href="#tools">Tools</a>
+
+                <a id="list_content" href="https://rushabh-1510.web.app/" target="_blank">About</a>
+                <a id="navbar_contact_link" href="#" id="contact_link">Contact</a>
+                <button id="premium_btn">Premium</button>
+            </ul>
+        </div>
+    </div>
+    <div class="home">
+        <div class="home_left">
+            <h1 id="tagline">Transform your PDF easily.</h1>
+            <p id="tag_desc">Convert, edit, and manage your PDFs like a pro with our fast, reliable, and secure tools, perfect for both personal and professional use.</p>
+            <button id="start_btn"><i class="fa fa-file-text-o" aria-hidden="true"></i> Upload PDF</button>
+        </div>
+        <dotlottie-player src="https://lottie.host/bd4749c5-8779-4a75-8ce5-bfce41be9944/LeO7K6zK3o.lottie" speed="1" loop autoplay id="file_animation"></dotlottie-player>
+    </div>
+    <div class="features-section" id="features-section">
+        <h2 id="features-title">Key PDF Tools</h2>
+        <div class="features" id="features"></div>
+        <button id="all_tools_btn">All Tools</button>
+    </div>
+    <div class="testimonial-section">
+        <h2 id="testimonial-title">User Reviews</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-slider" id="testimonial-slider"></div>
+            <button class="testimonial-nav prev" id="prev">❮</button>
+            <button class="testimonial-nav next" id="next">❯</button>
+        </div>
+
+    </div>
+    <div class="pricing-section" id="pricing-section">
+        <h1>Choose the Perfect Plan for You</h1>
+        <p>Simple and affordable pricing plans for your PDF needs</p>
+        <div class="pricing-cards">
+          <div class="plan_card">
+            <h2>Free</h2>
+            <p class="price">$0<span>/month</span></p>
+            <ul class="plan_features">
+              <li><i class="fa fa-check"></i> Basic Features</li>
+              <li><i class="fa fa-check"></i> Limited Usage</li>
+              <li><i class="fa fa-times"></i> No Premium Features</li>
+            </ul>
+            <button class="select-btn">Get Started</button>
+          </div>
+          <div class="plan_card" id="pro_card">
+            <h2>Pro</h2>
+            <p class="price" id="pro_price">$9.99<span>/month</span></p>
+            <ul class="plan_features">
+              <li><i class="fa fa-check" id="white_tick"></i> All Basic Features</li>
+              <li><i class="fa fa-check" id="white_tick"></i> Unlimited Usage</li>
+              <li><i class="fa fa-check" id="white_tick"></i> Access to Premium Features</li>
+            </ul>
+            <button class="select-btn" id="pro_btn">Choose Pro</button>
+          </div>
+          <div class="plan_card" id="pro_card">
+            <h2>Business</h2>
+            <p class="price" id="pro_price">$19.99<span>/month</span></p>
+            <ul class="plan_features"  >
+              <li><i class="fa fa-check"id="white_tick"></i> All Pro Features</li>
+              <li><i class="fa fa-check" id="white_tick"></i> Multi-user Support</li>
+              <li><i class="fa fa-check" id="white_tick"></i> Priority Support</li>
+            </ul>
+            <button class="select-btn" id="pro_btn">Choose Business</button>
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="#features-section">Tools</a>
+        <a href="https://rushabh-1510.web.app/" target="_blank">About</a>
+        <a href="#" id="footer_contact_link">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a ><i class="fa fa-facebook"></i></a>
+        <a ><i class="fa fa-twitter"></i></a>
+        <a ><i class="fa fa-linkedin"></i></a>
+        <a ><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="footer-contact">
+        <p>Email: info@orangepdf.com</p>
+        <p>Phone: +91 7506266909</p>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2024 OrangePDF. Developed by Rushabh Kunte. All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="contactForm" class="contact-form">
+        <div class="contact-form-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+  
+            <button type="submit" id="submit_btn">Submit</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
