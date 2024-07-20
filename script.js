@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonialSlider.appendChild(card);
   });
 
-  // Clone the first and last testimonial for seamless loop
+
   const firstClone = testimonialSlider.children[0].cloneNode(true);
   const lastClone = testimonialSlider.children[testimonials.length - 1].cloneNode(true);
 
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("next").addEventListener("click", nextTestimonial);
   document.getElementById("prev").addEventListener("click", prevTestimonial);
 
-  setInterval(nextTestimonial, 3000); // Change testimonial every 3 seconds
+  setInterval(nextTestimonial, 3000); 
 
   // Contact Form Section
   const contactLinks = document.querySelectorAll('#navbar_contact_link, #footer_contact_link');
@@ -189,17 +189,17 @@ window.addEventListener("click", function (event) {
 });
 
 document.getElementById("submit_btn").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent the form from submitting
-  location.reload(); // Refresh the page
+  event.preventDefault();
+  location.reload();
 });
 
 document.querySelector("a[href='#tools']").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent the default anchor click behavior
+  event.preventDefault();
   document.getElementById("features-section").scrollIntoView({ behavior: 'smooth' });
 });
 
 document.getElementById("premium_btn").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevent any default button behavior
+  event.preventDefault(); 
   document.getElementById("pricing-section").scrollIntoView({ behavior: 'smooth' });
 });
 
